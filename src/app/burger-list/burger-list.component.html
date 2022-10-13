@@ -1,0 +1,33 @@
+<h1>Hamburguesas</h1>
+<div class="table-burguer">
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Nombre</th>
+            <th>¿Que Tiene?</th>
+            <th>Precios</th>
+            <th>Cantidad</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let burger of burgers" [ngClass]="{'vegan':burger.vegan}">
+            <td><img class="img-thumbnail"  [src]="burger.image" width="900" [alt]="burger.name"></td>
+            <td>{{burger.name}}</td>
+            <td>{{burger.description}}</td>
+            <td>{{burger.price | currency}}</td>
+            <td> 
+                <button class="btn btn-primary btn-sm btn-amount" (click)="downAmount(burger)">-</button>
+                <input class="int-amount" type="number"[value]="burger.amount">
+                <button class="btn btn-primary btn-sm " (click)="upAmount(burger)">+</button>
+            </td>
+            <td>
+            <input type="button" value="Agregar" action="add">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+</div>
