@@ -1,23 +1,17 @@
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a href="#"><img  id="icono"  src="../assets/img/icono1.png" height="50px" width="50px"></a>
+    <a [routerLink]="['/']"><img  id="icono"  src="../assets/img/icono1.png" height="50px" width="50px"></a>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="navbar-brand" href="#">Sucursales</a>
-        <a class="navbar-brand" href="#">Contacto</a>
+        <a class="navbar-brand" [routerLink]="['/about']">Sobre nosotros</a>
+        <a class="navbar-brand" [routerLink]="['/contact']">Contacto</a>
         
       </div>
     </div>
   </div>
 </nav>
 <div class="container">
-  <div class="row">
-    <div class="col-9">
-      <app-burger-list></app-burger-list>
-    </div>
-    <div class="col-3"><app-cart></app-cart></div>
-  </div>
-
+  <router-outlet></router-outlet>
 </div>
 <footer>
   <p> Rocket's Burger 2022</p>
