@@ -1,4 +1,4 @@
-export interface burger{
+export interface Burger{
     image: string;
     name: string;
     description : string;

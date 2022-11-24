@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { burger } from './burger';
+import { Burger } from './burger';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { burger } from './burger';
 })
 export class burgerListComponent implements OnInit {
 
-  burgers: burger[] =[{
+  burgers: Burger[] =[{
     "image" :"../assets/img/doble.jpg",
     "name":"Titan II",
     "description":"Doble Carne, Lechuga, Tomate, Cebolla, Panceta y Cheddar" ,
@@ -49,11 +49,5 @@ export class burgerListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  downAmount(burger:burger): void{
-    if(burger.amount>0)
-    burger.amount--;
-  }
-  upAmount(burger:burger): void{
-    burger.amount++;
-  }
+ 
 }

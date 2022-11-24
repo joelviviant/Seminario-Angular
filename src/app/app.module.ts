@@ -8,7 +8,8 @@ import { CartComponent } from './cart/cart.component';
 import {FormsModule} from '@angular/forms';
 import { RocketAboutComponent } from './rocket-about/rocket-about.component';
 import { RocketBurgerComponent } from './rocket-burger/rocket-burger.component';
-import { RocketContactComponent } from './rocket-contact/rocket-contact.component'
+import { RocketContactComponent } from './rocket-contact/rocket-contact.component';
+import { InputUserComponent } from './input-user/input-user.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RocketContactComponent } from './rocket-contact/rocket-contact.componen
     CartComponent,
     RocketAboutComponent,
     RocketBurgerComponent,
-    RocketContactComponent
+    RocketContactComponent,
+    InputUserComponent
   ],
   imports: [
     BrowserModule,

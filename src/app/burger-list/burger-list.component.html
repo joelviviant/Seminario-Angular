@@ -18,11 +18,7 @@
             <td>{{burger.description}}</td>
             <td>{{burger.price | currency}}</td>
             <td> 
-                <div class="input-group" >
-                <button class="input-group-prepend btn btn-primary btn-sm btn-amount" (click)="downAmount(burger)">-</button>
-                <input class=" input-group-append int-amount" type="number" [(ngModel)]="burger.amount">
-                <button class="btn btn-primary btn-sm " (click)="upAmount(burger)">+</button>
-                </div>
+              <app-input-user [burger]="burger"></app-input-user>
             </td>
             <td>
             <input type="button" value="Agregar" action="add">
