@@ -17,7 +17,7 @@ export class burgerListComponent implements OnInit {
     "vegan":false,   
     "amount":0     
   },{
-    "image":"../assets/img/doble-huevo.jpg",
+    "image":"https://raw.githubusercontent.com/joelviviant/Seminario-Angular/master/src/assets/img/doble-huevo.jpg",
     "name":"Columbia",
     "description":"Doble Notburger, Lechuga, Tomate, Cebolla, Huevo frito, Morron, Panceta y Cheddar",
     "price":1400,
