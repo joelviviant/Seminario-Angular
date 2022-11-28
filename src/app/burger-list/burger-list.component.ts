@@ -10,7 +10,7 @@ import { Burger } from './burger';
 export class burgerListComponent implements OnInit {
 
   burgers: Burger[] =[{
-    "image" :"../assets/img/doble.jpg",
+    "image" :"https://raw.githubusercontent.com/joelviviant/Seminario-Angular/master/src/assets/img/doble.jpg",
     "name":"Titan II",
     "description":"Doble Carne, Lechuga, Tomate, Cebolla, Panceta y Cheddar" ,
     "price":1100,
