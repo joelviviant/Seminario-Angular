@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BurgerCartService } from '../burger-cart.service';
 import { Burger } from './burger';
 
 
@@ -45,7 +46,13 @@ export class burgerListComponent implements OnInit {
   "vegan":false  ,
   "amount":0  
 }]
-  constructor() { }
+  constructor(private cart:BurgerCartService) { 
+    
+  }
+
+  addCart(Burger: any):void{
+    this.cart.addCart(Burger);
+  }
 
   ngOnInit(): void {
   }

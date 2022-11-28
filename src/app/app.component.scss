@@ -1,6 +1,7 @@
 body {
     background-color: black;
     min-height: 100%!important;
+    
 }
 html {
     height: 100%!important;
@@ -8,9 +9,8 @@ html {
 
 
 footer{
-    padding: 1px;
+    margin-top: auto!important;
     background-color: black;
     color: white;
     text-align: center;
-
-    }
+}
