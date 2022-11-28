@@ -18,7 +18,7 @@
             <td>{{burger.description}}</td>
             <td>{{burger.price | currency}}</td>
             <td> 
-              <app-input-user [amount]="burger.amount"></app-input-user>
+              <app-input-user [(amount)]="burger.amount"></app-input-user>
             </td>
             <td>
             <button id ="agregar" (click)="addCart(burger)">Agregar</button>

@@ -1,5 +1,5 @@
 <div class="input-group" >
     <button class="input-group-prepend btn btn-primary btn-sm btn-amount" (click)="downAmount()">-</button>
-    <input class=" input-group-append int-amount" type="number" [(ngModel)]="amount">
+    <input class=" input-group-append int-amount" type="text" [(ngModel)]="amount" (keyup)="updateChange($event)" >
     <button class="btn btn-primary btn-sm " (click)="upAmount()">+</button>
 </div>

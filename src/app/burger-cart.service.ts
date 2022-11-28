@@ -11,9 +11,13 @@ export class BurgerCartService {
   constructor() {
   }
 
-  addCart(Burger: Burger) {
-    this.cartList.push(Burger);
-    console.log(this.cartList.length);
+  addCart(burger: Burger) {
+    let item : Burger = this.cartList.find((v1)=>v1.name = burger.name)!;
+    if(!item){
+      this.cartList.push(burger);
+    }
+    
+    console.log(this.cartList);
   }
 
  
