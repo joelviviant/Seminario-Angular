@@ -24,21 +24,21 @@ export class burgerListComponent implements OnInit {
     "vegan":true ,
     "amount":0  
   },{
-  "image":"../assets/img/doble-morron.jpg",
+  "image":"https://raw.githubusercontent.com/joelviviant/Seminario-Angular/master/src/assets/img/doble-morron.jpg",
   "name":"Tronador II",
   "description":"Doble Carne, Chimichurri, Mozzarella, Cebolla caramelizada y Morrones asados",
   "price":1300,
   "vegan":false ,
   "amount":0  
 },{
-  "image":"../assets/img/quesos.jpg",
+  "image":"https://raw.githubusercontent.com/joelviviant/Seminario-Angular/master/src/assets/img/quesos.jpg",
   "name":"Falcon I",
   "description":"Notburger, Rucula, Quezo azul, Mozzarella, Cheddar y Cebolla caramelizada",
   "price":1350,
   "vegan":true  ,
   "amount":0  
 },{
-  "image":"../assets/img/triple.webp",
+  "image":"https://raw.githubusercontent.com/joelviviant/Seminario-Angular/master/src/assets/img/triple.webp",
   "name":"Delta III",
   "description":"Triple Carne, Aros de cebolla, Panceta, Queso Cheddar, Huevo frito y BBQ",
   "price":1600,
