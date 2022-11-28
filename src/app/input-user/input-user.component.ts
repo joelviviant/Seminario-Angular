@@ -11,17 +11,16 @@ export class InputUserComponent implements OnInit {
   constructor() { }
 
   @Input()
-  
-  burger!: Burger;
+  amount!: number;
 
   ngOnInit(): void {
   }
-  downAmount(burger:Burger): void{
-    if(burger.amount>0)
-    burger.amount--;
+  downAmount(): void{
+    if(this.amount>0)
+    this.amount--;
   }
-  upAmount(burger:Burger): void{
-    burger.amount++;
+  upAmount(): void{
+    this.amount++;
   }
 
 }
