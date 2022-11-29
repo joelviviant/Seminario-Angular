@@ -14,15 +14,15 @@ export class BurgerCartService {
   constructor() {}
 
   addCart(burger: Burger){
-    let item : Burger = this._cartList.find((v1)=>v1.name == burger.name)!;
-    console.log(item);
+    let item : Burger = this._cartList.find((v1)=>v1.name === burger.name)!;
+
     if(!item){
       this._cartList.push({...burger});
     }else{
       item.amount += burger.amount;
     }
     this.cartList.next(this._cartList);
-    console.log(this._cartList);
+ 
   }
 
  
