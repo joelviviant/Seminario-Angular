@@ -1,13 +1,13 @@
-<h1>Hamburguesas</h1>
+<h1>Nuestras Hamburguesas</h1>
 <div class="table-burguer text-center">
-<table class="table">
+<table>
     <thead>
         <tr>
             <th></th>
-            <th>Nombre</th>
-            <th>¿Que Tiene?</th>
-            <th>Precios</th>
-            <th>Cantidad</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
             <th></th>
         </tr>
     </thead>
@@ -21,7 +21,7 @@
               <app-input-user [(amount)]="burger.amount"></app-input-user>
             </td>
             <td>
-            <button id ="agregar" (click)="addCart(burger)">Agregar</button>
+            <button class="btn btn-success" (click)="addCart(burger)">Agregar</button>
             </td>
         </tr>
     </tbody>

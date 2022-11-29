@@ -29,6 +29,6 @@ export class burgerListComponent implements OnInit {
     this.cart.addCart(Burger);
   }
 
-  
+
  
 }

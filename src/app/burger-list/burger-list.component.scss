@@ -1,20 +1,21 @@
 h1{ 
+    font-family: 'Rubik Glitch', cursive!important;
     color: black;
 }
-.table{
-    background-color: #D4A86A;
-}
+
 .vegan{
-    background-color: #70B45A;
+    background-color: #F6EF62;
 }
 
 .table-burguer th{
     margin-left: 0px;
     min-width: 130px;
+   
+}
+table{
+    margin-top: 50px;
 }
 
-#agregar{
-    background-color: #0290B1;
-    border-radius: 60px 20px 5px;
-    border-color: #0290B1;
+td{
+    font-family: 'Anton', sans-serif;
 }

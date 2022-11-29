@@ -1,8 +1,8 @@
 
 <h1>Carrito</h1>
 <div class="carrito">
-    <table class="table">
-        <thead class="table-dark">
+    <table >
+        <thead >
             <tr>
                 <th>Hamburguesa</th>
                 <th>Cantidad</th>
@@ -13,9 +13,9 @@
             <tr *ngFor="let burger of cartList">
                 <td>{{burger.name}}</td>
                 <td>{{burger.amount}}</td>
-                <td><button id ="delete" (click)="deleteCart(burger)">Eliminar</button></td>
+                <td><button class="btn btn-danger"(click)="deleteCart(burger)">Eliminar</button></td>
             </tr>
         </tbody>
     </table>
-    <button id ="submit" (click)="submit()">Realizar Pedido</button>
+    <button class="btn btn-primary" (click)="submit()">Realizar Pedido</button>
 </div>
