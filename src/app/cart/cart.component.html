@@ -1,10 +1,20 @@
 <h1>Carrito</h1>
 <div class="carrito">
-    <ul class="list-group">
-    <li class="list-group-item" *ngFor="let burger of cartList">
-       {{burger.name}}:{{burger.amount}}
-    </li>
-</ul>
-
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <th>Hamburguesa</th>
+                <th>Cantidad</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let burger of cartList">
+                <td>{{burger.name}}</td>
+                <td>{{burger.amount}}</td>
+                <td><button id ="delete" (click)="deleteCart(burger)">Eliminar</button></td>
+            </tr>
+        </tbody>
+    </table>
 <button id="finalizar" type="submit" aria-roledescription="">Finalizar Compra</button>
 </div>

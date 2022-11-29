@@ -18,5 +18,8 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  deleteCart(Burger: any):void{
+    this.cart.deleteCart(Burger);
+  }
 }
