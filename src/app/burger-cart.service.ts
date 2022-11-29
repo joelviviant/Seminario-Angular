@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { Burger } from './burger-list/burger';
 
 @Injectable({
@@ -6,18 +7,23 @@ import { Burger } from './burger-list/burger';
 })
 export class BurgerCartService {
 
-  cartList:  Burger[]=[];
+  private _cartList : Burger[]=[];
+
+  cartList: BehaviorSubject<Burger[]> = new BehaviorSubject( this._cartList);
 
   constructor() {
+  
   }
 
-  addCart(burger: Burger) {
-    let item : Burger = this.cartList.find((v1)=>v1.name = burger.name)!;
+  addCart(burger: Burger): void {
+    let item : Burger = this._cartList.find((v1)=>v1.name = burger.name)!;
     if(!item){
-      this.cartList.push(burger);
+      this._cartList.push({...burger});
+    }else{
+      item.amount += burger.amount;
     }
     
-    console.log(this.cartList);
+    console.log(this._cartList);
   }
 
  
