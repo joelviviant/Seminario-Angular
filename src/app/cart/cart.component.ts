@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { observable } from 'rxjs';
+import Swal from 'sweetalert2';
 import { BurgerCartService } from '../burger-cart.service';
 import { Burger } from '../burger-list/burger';
 
@@ -21,5 +21,17 @@ export class CartComponent implements OnInit {
   
   deleteCart(Burger: any):void{
     this.cart.deleteCart(Burger);
+  }
+  submit(){
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Su pedido fue realizado con éxito',
+      showConfirmButton: false,
+      timer: 2000,
+      backdrop: `
+        rgba(0,0,123,0.4)`
+    })
+    
   }
 }
