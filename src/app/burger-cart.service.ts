@@ -9,7 +9,7 @@ export class BurgerCartService {
 
   private _cartList : Burger[]=[];
 
-  cartList: BehaviorSubject<Burger[]> = new BehaviorSubject( this._cartList);
+  cartList: BehaviorSubject<Burger[]> = new BehaviorSubject(this._cartList);
 
   constructor() {
   
@@ -22,8 +22,7 @@ export class BurgerCartService {
     }else{
       item.amount += burger.amount;
     }
-    
-    console.log(this._cartList);
+    this.cartList.next(this._cartList);
   }
 
  
