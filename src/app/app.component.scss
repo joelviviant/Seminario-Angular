@@ -6,7 +6,10 @@ body {
 html {
     height: 100%!important;
 }
-
+nav.navbar.navbar-expand-lg{
+    margin-left: 100px;
+    padding: 20px;
+} 
 
 footer{
     margin-top: auto!important;
@@ -14,12 +17,11 @@ footer{
     text-align: center;
     width: 100%;
     font-family: 'Anton', sans-serif;
-  
-    
 
 }
 a{
     font-family: 'Anton', sans-serif;
+    padding-left: 200px;
 }
 .content{
     margin-bottom: 150px;
