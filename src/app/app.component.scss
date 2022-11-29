@@ -13,10 +13,13 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
+    width: 100%;
+  
     
 
 }
 .content{
+    margin-bottom: 150px;
     height: 100%;
     display: flex;
     flex-direction: column;
