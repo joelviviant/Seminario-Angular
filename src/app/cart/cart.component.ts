@@ -22,8 +22,7 @@ export class CartComponent implements OnInit {
   deleteCart(Burger: any):void{
     this.cart.deleteCart(Burger);
   }
-  /**
-   *  submit(){
+   submit(){
     Swal.fire({
       position: 'center',
       icon: 'success',
@@ -34,10 +33,7 @@ export class CartComponent implements OnInit {
         rgba(0,0,123,0.4)`
     })
     
-  }
-   */
+  }  
   
-  submit(){
-    alert('Su pedido fue realizado con éxito');
-  }
+
 }
