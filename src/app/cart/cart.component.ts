@@ -11,7 +11,7 @@ import { Burger } from '../burger-list/burger';
 })
 export class CartComponent implements OnInit {
   
-  cartList!: Burger[];
+  cartList: Burger[] = [];
   constructor(private cart:BurgerCartService) {
     cart.cartList.subscribe(c=>this.cartList = c);
   }

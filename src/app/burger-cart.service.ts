@@ -22,6 +22,7 @@ export class BurgerCartService {
     }else{
       item.amount += burger.amount;
     }
+    console.log(this._cartList);
     this.cartList.next(this._cartList);
   }
 
