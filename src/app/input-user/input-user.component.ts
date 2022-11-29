@@ -19,9 +19,10 @@ export class InputUserComponent implements OnInit {
   ngOnInit(): void {
   }
   downAmount(): void{
-    if(this.amount>0)
+    if(this.amount>0){
     this.amount--;
     this.amountChange.emit(this.amount);
+    }
   }
   upAmount(): void{
     this.amount++;

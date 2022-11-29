@@ -7,23 +7,22 @@ import { Burger } from './burger-list/burger';
 })
 export class BurgerCartService {
 
-  private _cartList : Burger[]=[];
+  private _cartList: Burger[] = [];
 
   cartList: BehaviorSubject<Burger[]> = new BehaviorSubject(this._cartList);
 
-  constructor() {
-  
-  }
+  constructor() {}
 
-  addCart(burger: Burger): void {
-    let item : Burger = this._cartList.find((v1)=>v1.name = burger.name)!;
+  addCart(burger: Burger){
+    let item : Burger = this._cartList.find((v1)=>v1.name == burger.name)!;
+    console.log(item);
     if(!item){
       this._cartList.push({...burger});
     }else{
       item.amount += burger.amount;
     }
-    console.log(this._cartList);
     this.cartList.next(this._cartList);
+    console.log(this._cartList);
   }
 
  
